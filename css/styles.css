@@ -125,3 +125,26 @@ form button:hover {
     border-radius: 8px;
     overflow: hidden;
 }
+
+
+/* Certifications Section */
+.certifications {
+    padding: 20px;
+}
+
+.badge-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.badge-container h3 {
+    margin-top: 0;
+}
+
+.certifications div[data-iframe-width] {
+    margin: 10px auto;
+}
