@@ -127,42 +127,58 @@ form button:hover {
 }
 
 
-
 /* Certifications Section */
 .certifications {
     padding: 20px;
 }
 
-.certifications-container {
+.badges-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 15px; /* Space between items */
+    flex-wrap: wrap; /* Allows badges to wrap to the next line */
+    gap: 20px; /* Space between badges */
+    justify-content: center; /* Center-align badges */
 }
 
-.certification-item {
+.badge-item {
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px 15px;
-    font-size: 14px;
+    padding: 15px;
     text-align: center;
-    flex: 1 1 calc(16.66% - 20px); /* 6 items per row (100% / 6 = ~16.66%) */
+    flex: 1 1 calc(16.66% - 40px); /* 6 badges per row (adjust based on screen size) */
     box-sizing: border-box;
 }
 
-.certification-item:hover {
-    background: #e9ecef;
-    cursor: pointer;
+.badge-item h3 {
+    margin: 0 0 10px; /* Add spacing between title and badge */
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .badge-item {
+        flex: 1 1 calc(20% - 40px); /* 5 badges per row on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .badge-item {
+        flex: 1 1 calc(25% - 40px); /* 4 badges per row on smaller screens */
+    }
 }
 
 @media (max-width: 768px) {
-    .certification-item {
-        flex: 1 1 calc(33.33% - 20px); /* 3 items per row on smaller screens */
+    .badge-item {
+        flex: 1 1 calc(33.33% - 40px); /* 3 badges per row on tablets */
     }
 }
 
-@media (max-width: 480px) {
-    .certification-item {
-        flex: 1 1 calc(50% - 20px); /* 2 items per row on very small screens */
+@media (max-width: 576px) {
+    .badge-item {
+        flex: 1 1 calc(50% - 40px); /* 2 badges per row on mobile devices */
     }
+}
+
+.badge-item:hover {
+    background: #e9ecef;
+    cursor: pointer;
 }
