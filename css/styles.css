@@ -127,24 +127,42 @@ form button:hover {
 }
 
 
+
 /* Certifications Section */
 .certifications {
     padding: 20px;
 }
 
-.badge-container {
-    margin-bottom: 20px;
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 15px; /* Space between items */
+}
+
+.certification-item {
+    background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px;
-    background: #f9f9f9;
+    padding: 10px 15px;
+    font-size: 14px;
     text-align: center;
+    flex: 1 1 calc(16.66% - 20px); /* 6 items per row (100% / 6 = ~16.66%) */
+    box-sizing: border-box;
 }
 
-.badge-container h3 {
-    margin-top: 0;
+.certification-item:hover {
+    background: #e9ecef;
+    cursor: pointer;
 }
 
-.certifications div[data-iframe-width] {
-    margin: 10px auto;
+@media (max-width: 768px) {
+    .certification-item {
+        flex: 1 1 calc(33.33% - 20px); /* 3 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .certification-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on very small screens */
+    }
 }
