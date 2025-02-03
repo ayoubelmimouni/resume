@@ -51,14 +51,18 @@ main {
     padding: 20px;
 }
 
+/* Footer Styles */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background: #333; /* Dark background for contrast */
+    color: #fff; /* White text for visibility */
+    text-align: center; /* Center-align the text */
+    padding: 15px 0; /* Add padding for spacing */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 20px; /* Add space between content and footer */
+}
+
+.footer-copyright p {
+    margin: 0; /* Remove default margin for cleaner alignment */
 }
 
 
