@@ -4,44 +4,300 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayoub El Mimouni | DevOps & Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Ayoub El Mimouni</h1>
-            <p>DevOps & Cloud Engineer</p>
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+    <div class="background-texture"></div>
+
+    <nav class="top-nav">
+        <div class="container nav-content">
+            <div class="brand">
+                <span class="brand-dot"></span>
+                <span>Ayoub El Mimouni</span>
+            </div>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="btn ghost small" href="Ayoub_EL_MIMOUNI_2025__.pdf" download>Download PDF</a>
+                <a class="btn small" href="mailto:ay.elmimouni@gmail.com">Email</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="top">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow">DevOps & Cloud Engineer</p>
+                <h1>Ayoub El Mimouni</h1>
+                <p class="lead">Remote-first DevOps and Cloud Consultant with deep experience in automation, Kubernetes, and Infrastructure as Code across AWS, Azure, IBM Cloud, GCP, and OCI.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="#contact">Book a call</a>
+                    <a class="btn ghost" href="Ayoub_EL_MIMOUNI_2025__.pdf" download>Download resume</a>
+                </div>
+                <div class="meta">
+                    <span>Casablanca, Morocco</span>
+                    <span>English / French / Arabic</span>
+                    <span>Open to remote & hybrid</span>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="profile-frame">
+                    <img src="images/profile.jpg" alt="Portrait of Ayoub El Mimouni">
+                </div>
+                <div class="stat-grid">
+                    <div class="stat">
+                        <p class="label">Experience</p>
+                        <p class="value">6+ years</p>
+                        <p class="sub">DevOps & Cloud delivery</p>
+                    </div>
+                    <div class="stat">
+                        <p class="label">Kubernetes</p>
+                        <p class="value">CKAD</p>
+                        <p class="sub">Helm, ArgoCD, Sealed Secrets</p>
+                    </div>
+                    <div class="stat">
+                        <p class="label">IaC</p>
+                        <p class="value">Terraform</p>
+                        <p class="sub">GitOps with Atlantis</p>
+                    </div>
+                    <div class="stat">
+                        <p class="label">Cloud</p>
+                        <p class="value">AWS | Azure</p>
+                        <p class="sub">GCP | IBM | OCI</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
     <main>
-        <section class="intro">
-            <h2>Welcome!</h2>
-            <p>I'm Ayoub El Mimouni, a DevOps & Cloud Engineer with expertise in automation, cloud platforms (AWS, Azure, IBM), containerization (Docker, Kubernetes), and Infrastructure as Code (Terraform). I specialize in CI/CD pipelines, Kubernetes orchestration, and cloud infrastructure management.</p>
+        <section id="summary" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Profile</p>
+                    <h2>Summary</h2>
+                    <p class="muted">Hands-on DevOps and Cloud Engineer focusing on automating delivery, securing workloads, and building reliable, observable platforms for distributed teams.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <p>Experienced DevOps and Cloud Consultant specializing in automation, Kubernetes, and Infrastructure as Code. I design and run CI/CD pipelines with Jenkins, GitLab CI, and GitHub Actions, deliver GitOps workflows with ArgoCD and Atlantis, and manage cloud platforms across AWS, Azure, IBM Cloud, GCP, and OCI. I prioritize secure, observable delivery with Sealed Secrets, VPNs, and EFK/ELK, and I am fluent in English, French, and Arabic.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Capabilities</p>
+                    <h2>Skills at a glance</h2>
+                    <p class="muted">Tooling and platforms I use to ship infrastructure and applications with confidence.</p>
+                </div>
+                <div class="pill-grid">
+                    <div class="pill-card">
+                        <h3>Automation & CI/CD</h3>
+                        <p>Jenkins, GitLab CI, GitHub Actions, Azure DevOps, ArgoCD, Atlantis, Sealed Secrets.</p>
+                    </div>
+                    <div class="pill-card">
+                        <h3>Infrastructure as Code</h3>
+                        <p>Terraform (certified), Ansible, automated DR on GCP, policy-backed workflows.</p>
+                    </div>
+                    <div class="pill-card">
+                        <h3>Cloud Platforms</h3>
+                        <p>AWS (certified), Azure (certified), IBM Cloud, GCP, Oracle Cloud, hybrid and multi-cloud designs.</p>
+                    </div>
+                    <div class="pill-card">
+                        <h3>Containers & Service Mesh</h3>
+                        <p>Kubernetes (CKAD), OpenShift, Helm, Istio, secure secret management, GitOps delivery.</p>
+                    </div>
+                    <div class="pill-card">
+                        <h3>Observability & Security</h3>
+                        <p>ELK/EFK, CloudWatch, Black Duck, Coverity, SonarQube, VPNs, Vault-style secret handling.</p>
+                    </div>
+                    <div class="pill-card">
+                        <h3>Code & Scripting</h3>
+                        <p>GitHub, GitLab, Bitbucket, Bash, Python, Gradle, npm, API-first integrations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Career</p>
+                    <h2>Experience</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-head">
+                            <div>
+                                <p class="eyebrow">Aug 2024 – Present · Remote</p>
+                                <h3>Senior DevOps & Cloud Engineer</h3>
+                                <p class="muted">Evident · Canada</p>
+                            </div>
+                            <span class="tag">GitOps</span>
+                        </div>
+                        <ul>
+                            <li>Led GitOps adoption with ArgoCD for Kubernetes deployments, improving visibility and reliability.</li>
+                            <li>Implemented Sealed Secrets and Atlantis to secure secrets and automate Terraform workflows.</li>
+                            <li>Built and maintained GitLab CI pipelines, reducing deployment time and manual toil.</li>
+                            <li>Managed Terraform-based Azure environments with Helm-delivered workloads.</li>
+                            <li>Rolled out Black Duck and Coverity to uplift security and code quality.</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <div class="card-head">
+                            <div>
+                                <p class="eyebrow">Jan 2024 – Mar 2025 · Part-time · Remote</p>
+                                <h3>Senior DevOps & Cloud Consultant</h3>
+                                <p class="muted">Tiqmo · Riyadh, Saudi Arabia</p>
+                            </div>
+                            <span class="tag">OCI / GCP</span>
+                        </div>
+                        <ul>
+                            <li>Delivered CI/CD pipelines with Jenkins and GitLab CI for microservices, accelerating releases.</li>
+                            <li>Administered Kubernetes clusters for availability and efficient resource usage.</li>
+                            <li>Provisioned OCI and GCP with Terraform, including full DR design on GCP.</li>
+                            <li>Automated backend deployments and Kubernetes app configurations.</li>
+                            <li>Drove cost and performance optimizations through monitoring and scaling strategies.</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <div class="card-head">
+                            <div>
+                                <p class="eyebrow">Apr 2023 – Aug 2024 · Remote</p>
+                                <h3>DevOps & Cloud Consultant</h3>
+                                <p class="muted">BioTwin · Canada</p>
+                            </div>
+                            <span class="tag">Multi-cloud</span>
+                        </div>
+                        <ul>
+                            <li>Built CI/CD with Jenkins and GitHub Actions, cutting manual work by 70%.</li>
+                            <li>Ran GitOps with ArgoCD and Atlantis for Kubernetes and Terraform delivery.</li>
+                            <li>Managed Kubernetes clusters across Azure, AWS, and IBM with Terraform and Helm.</li>
+                            <li>Stood up ELK/EFK stacks, VPN connectivity, and cloud monitoring across providers.</li>
+                            <li>Delivered migrations (Azure MySQL to AWS RDS) and mobile app pipelines for Android/iOS.</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <div class="card-head">
+                            <div>
+                                <p class="eyebrow">Mar 2019 – Apr 2023 · Casablanca</p>
+                                <h3>DevOps Consultant</h3>
+                                <p class="muted">IBM</p>
+                            </div>
+                            <span class="tag">Azure / AWS</span>
+                        </div>
+                        <ul>
+                            <li>Served as SME for Azure and AWS automation, building Terraform-based environments.</li>
+                            <li>Designed CI/CD with Jenkins, Azure DevOps, and Ansible in containerized stacks.</li>
+                            <li>Operated Kafka clusters, Vault on AWS EC2, and API gateways with strong security focus.</li>
+                            <li>Deployed microservices to AKS and Azure VMs, ensuring scale and reliability.</li>
+                            <li>Embedded with scrum teams to ship cloud-native workloads and troubleshoot production.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Academics</p>
+                    <h2>Education</h2>
+                </div>
+                <div class="card-grid two-col">
+                    <article class="card">
+                        <h3>Engineering Degree, Computer Engineering</h3>
+                        <p class="muted">National School of Applied Sciences of Fes · Morocco</p>
+                        <p class="eyebrow">June 2019</p>
+                    </article>
+                    <article class="card">
+                        <h3>Bachelor of Science, Electronics Technology</h3>
+                        <p class="muted">Faculty of Sciences of El Jadida · Morocco</p>
+                        <p class="eyebrow">June 2017</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Proof</p>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="tag-grid">
+                    <span class="tag bold">CKAD: Certified Kubernetes Application Developer</span>
+                    <span class="tag bold">AWS Certified Solutions Architect – Associate</span>
+                    <span class="tag bold">HashiCorp Certified: Terraform Associate</span>
+                    <span class="tag bold">Microsoft Certified: Azure Fundamentals</span>
+                    <span class="tag bold">Terraform on IBM Cloud</span>
+                    <span class="tag bold">Scrum Foundation Professional Certificate</span>
+                    <span class="tag bold">IBM Cloud Private - CI/CD Pipelines</span>
+                    <span class="tag bold">IBM Cloud Kubernetes Service</span>
+                    <span class="tag bold">Interskill - Mainframe Specialist (Linux Ops & Programming)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Communication</p>
+                    <h2>Languages</h2>
+                </div>
+                <div class="pill-grid">
+                    <div class="pill-card"><h3>English</h3><p>Advanced</p></div>
+                    <div class="pill-card"><h3>French</h3><p>Advanced</p></div>
+                    <div class="pill-card"><h3>Arabic</h3><p>Proficient</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-card">
+                <div>
+                    <p class="eyebrow">Let us talk</p>
+                    <h2>Contact</h2>
+                    <p class="muted">Available for remote and hybrid engagements. I respond fastest by email.</p>
+                    <div class="contact-grid">
+                        <div>
+                            <p class="label">Email</p>
+                            <a href="mailto:ay.elmimouni@gmail.com">ay.elmimouni@gmail.com</a>
+                        </div>
+                        <div>
+                            <p class="label">Phone</p>
+                            <a href="tel:+212708207696">+212 708 207 696</a>
+                        </div>
+                        <div>
+                            <p class="label">Location</p>
+                            <span>Casablanca, Morocco · Remote-friendly</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a class="btn" href="mailto:ay.elmimouni@gmail.com">Start a conversation</a>
+                        <a class="btn ghost" href="Ayoub_EL_MIMOUNI_2025__.pdf" download>Download PDF</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Ayoub El Mimouni. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>Updated for 2025 · Ayoub El Mimouni</p>
+        </div>
     </footer>
-
-    <script src="js/scripts.js"></script>
 </body>
 </html>
